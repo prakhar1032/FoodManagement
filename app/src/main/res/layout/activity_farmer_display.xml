@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F2F2"
+    tools:context=".NGO_farmer_aord">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarfarmerback"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="373dp"
+        android:layout_height="720dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        android:elevation="15dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#2056C3"
+        app:fabCustomSize="60dp"
+        app:fab_colorNormal="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923"
+        app:maxImageSize="45dp"
+        app:rippleColor="#FFFFFF"
+        app:tint="@android:color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

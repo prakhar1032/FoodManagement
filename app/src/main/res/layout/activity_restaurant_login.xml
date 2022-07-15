@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".restaurant.RestaurantLogin">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarrestaurantback">
+    </include>
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="310dp"
+        android:layout_height="49dp"
+        android:background="#366498"
+        android:text="Log in"
+        app:backgroundTint="#9EFF5722"
+        app:iconTint="#1C1B1B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="294dp"
+        android:layout_height="75dp"
+        android:text="RESTAURANT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#E8410C"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#E8410C"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="@+id/tvsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="265dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/resto" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#C1B8B8"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="251dp"
+        android:layout_height="38dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#C1B8B8"
+        app:layout_constraintBottom_toTopOf="@+id/btlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <TextView
+        android:id="@+id/tvsignup"
+        android:layout_width="260dp"
+        android:layout_height="37dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="New user? Sign up here "
+        android:textColor="@color/black"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tvforgot"
+        android:layout_width="195dp"
+        android:layout_height="27dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Forgot Password?"
+        android:textColor="#6B6B6C"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

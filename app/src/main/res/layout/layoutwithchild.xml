@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#F6DADA">
+
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/toolbarfarmerback">
+    android:elevation="4dp"</include>
+
+    <RelativeLayout
+        android:id="@+id/b"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_baseline_keyboard_arrow_up_24" />
+    </RelativeLayout>
+</RelativeLayout>

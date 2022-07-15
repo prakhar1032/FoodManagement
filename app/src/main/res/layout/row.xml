@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="123dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Item name :"
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/qty1"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:text="Quantity : "
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/price1"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="95dp"
+            android:text="Price : "
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="212dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/p2"
+            android:layout_width="219dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/p3"
+            android:layout_width="227dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="95dp"
+            android:textColor="#0E0E0E"
+            android:textSize="22sp" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/accept"-->
+        <!--            android:layout_width="138dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="10dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="90dp"-->
+        <!--            android:text="Accept"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:textSize="22sp"-->
+        <!--            app:backgroundTint="#8BC34A" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/delete"-->
+        <!--            android:layout_width="138dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="200dp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:layout_marginTop="90dp"-->
+        <!--            android:text="Delete"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:textSize="22sp"-->
+        <!--            app:backgroundTint="#F44336" />-->
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

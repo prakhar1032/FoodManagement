@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Ngo.NgoSignup">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbarngoback">
+    </include>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="235dp"
+        android:layout_height="101dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="         NGO                 REGISTRATION"
+        android:textColor="#9C060B"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="17pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etName"
+        android:layout_width="332dp"
+        android:layout_height="56dp"
+        android:background="#4B9C060B"
+        android:hint=" Name"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:textColor="@color/black"
+        android:textColorHint="#686767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etAddress"
+        android:layout_width="331dp"
+        android:layout_height="65dp"
+        android:background="#4B9C060B"
+        android:hint=" Address"
+        android:inputType="textPostalAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#686767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.605"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPhone"
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:background="#4B9C060B"
+        android:hint=" Mobile No."
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="#686767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="333dp"
+        android:layout_height="61dp"
+        android:background="#4B9C060B"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="#686767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etpassword"
+        android:layout_width="337dp"
+        android:layout_height="63dp"
+        android:background="#4B9C060B"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#686767"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/btregister"
+        android:layout_width="227dp"
+        android:layout_height="62dp"
+        android:background="#CEE6CC"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:backgroundTint="#9C060B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpassword"
+        app:layout_constraintVertical_bias="0.395" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
